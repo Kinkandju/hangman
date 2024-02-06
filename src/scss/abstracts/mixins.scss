@@ -1,0 +1,22 @@
+@mixin text-properties($size, $weight, $height, $font-family) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  font-family: $font-family;
+}
+
+@mixin indents($margin: 0, $padding: 0) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}

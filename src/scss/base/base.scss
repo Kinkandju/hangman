@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  background: linear-gradient(36deg, $color-gradient1 7%, $color-gradient2 35%, $color-gradient3 100%);
+  color: $color-text;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+p,
+ul {
+  @include indents();
+}
+
+ul {
+  list-style: none;
+}
